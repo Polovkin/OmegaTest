@@ -1,29 +1,22 @@
-input {
-  &:valid:not(:placeholder-shown) {
-    color: $color__success;
-    border: {
-      color: $color__success;
-      style: solid;
+form {
+
+
+  input {
+
+    &.invalid {
+      border: 1px solid red;
     }
   }
 
-  &:invalid:not(:placeholder-shown) {
-    color: $color__error;
-    border: {
+  label {
+    span.error {
+      transition: all .3s;
+      position: relative;
       color: $color__error;
-      style: solid;
+      font-size: 12px;
+      top: 2px;
+      left: 7px;
     }
   }
-}
 
-form label {
-  span.error {
-    transition: all .3s;
-    position: relative;
-    color: $color__error;
-    font-size: 13px;
-    top: -7px;
-    left: 7px;
-    opacity: 0;
-  }
 }
