@@ -1,0 +1,20 @@
+include ../../utils/mixins
+-
+  locale='ru'
+  //Path
+  imgPath = '/assets/img/'
+  basePath =  '/';
+
+
+block variables
+
+doctype html
+html(lang=locale)
+  head
+    include baseHead
+    title=title
+    block head
+  body
+    include ../layout/header
+    block main
+
